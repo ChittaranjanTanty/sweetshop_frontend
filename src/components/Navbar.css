@@ -1,0 +1,64 @@
+.navbarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #ff6b81;
+  color: white;
+  position: relative;
+}
+
+/* Logo left */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* Centered search bar */
+.searchBar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Nav links right */
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* General link styling */
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Search input/button */
+.searchInput {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+.searchBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  color: #ff6b81;
+  font-weight: bold;
+  cursor: pointer;
+}
+.searchBtn:hover {
+  background: #ffe3e8;
+}
+

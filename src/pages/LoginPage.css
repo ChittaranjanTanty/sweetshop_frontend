@@ -1,0 +1,86 @@
+.loginPageWrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fffaf7;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.loginMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.loginTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff6b81;
+  text-align: center;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 1rem;
+}
+
+.loginForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.loginForm input {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+.loginForm input:focus {
+  border-color: #ff6b81;
+}
+
+.loginBtn {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background: #ff6b81;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.loginBtn:hover {
+  background: #ff4757;
+}
+
+.redirectSignup {
+  margin-top: 1rem;
+  text-align: center;
+}
+.redirectSignup a {
+  color: #ff6b81;
+  text-decoration: none;
+  font-weight: 500;
+}
+.redirectSignup a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .loginForm {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,106 @@
+.signupPageWrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fffaf7;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.signupMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.signupTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff6b81;
+  text-align: center;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 1rem;
+}
+
+.signupForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.signupForm input {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+.signupForm input:focus {
+  border-color: #ff6b81;
+}
+
+.signupBtn {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background: #ff6b81;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.signupBtn:hover {
+  background: #ff4757;
+}
+
+.redirectLogin {
+  margin-top: 1rem;
+  text-align: center;
+}
+.redirectLogin a {
+  color: #ff6b81;
+  text-decoration: none;
+  font-weight: 500;
+}
+.redirectLogin a:hover {
+  text-decoration: underline;
+}
+
+/* Role dropdown styling */
+.signupForm select[name="role"] {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.signupForm select[name="role"]:focus {
+  border-color: #ff6b81;
+  box-shadow: 0 0 5px rgba(255, 107, 129, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signupForm {
+    padding: 0 1rem;
+  }
+}

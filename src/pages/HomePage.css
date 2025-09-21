@@ -1,0 +1,122 @@
+/* Wrapper for full page */
+.homePageWrapper {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #fffaf7;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Main content spacing */
+.mainContent {
+  flex: 1;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffe3e8, #fffaf7);
+}
+.heroTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Sweets Grid */
+.sweetsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem 3rem;
+  justify-items: center;
+}
+
+/* Sweet Card */
+.sweetCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  width: 100%;
+  max-width: 250px;
+}
+.sweetCard:hover {
+  transform: translateY(-5px);
+}
+.sweetImage {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.sweetName {
+  margin: 0.8rem 0 0.3rem;
+  font-weight: 500;
+}
+.sweetPrice {
+  color: #ff6b81;
+  font-weight: bold;
+}
+.buyBtn {
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background: #ff6b81;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.buyBtn:hover {
+  background: #ff4757;
+}
+
+/* Footer */
+.footerWrapper {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+.footerLink {
+  color: #ff6b81;
+  text-decoration: none;
+}
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+/* Reset default box-sizing for everything */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+  .sweetsGrid {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+}
