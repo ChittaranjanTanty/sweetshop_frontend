@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SignupPage.css";
-import Navbar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 
 const SignupPage = () => {
   const [formData, setFormData] = useState({
