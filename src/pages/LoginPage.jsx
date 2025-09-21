@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/NavBar";
 import { loginUser } from "../api/authApi";
 import { AuthContext } from "../context/AuthContext";
 import "./LoginPage.css";
+import Navbar from "../components/Navbar";
 
 const LoginPage = () => {
   const { login } = useContext(AuthContext);
